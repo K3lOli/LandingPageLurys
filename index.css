@@ -132,10 +132,45 @@ button:hover {
 
 #QuemSomos1 {
     width: 60vw;
-    height: 320px;
+    height: 272px;
     background-color: white;
     display: flex;
     transition: 0.3s ease;
+    align-self: center;
+    justify-content: space-between;
+}
+
+#bene-econo img {
+    width: 50px;
+}
+
+#bene-econo h1 {
+    padding: 0;
+    margin-left: 7px;
+
+}
+
+#ul {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.lista {
+    list-style-type: disc;
+    margin: 0px 23px;
+    text-align: justify;
+}
+
+/*.lista:before {
+    content: '\25CF';
+    margin: 0 23px;
+    color: #0c2d2d;
+    cor da bolinha
+}*/
+
+#bene-econo {
+    display: flex;
+    align-items: center;
     align-self: center;
 }
 
@@ -149,6 +184,20 @@ button:hover {
 
 
 .interno h1 {
+    padding-bottom: 10px;
+}
+
+.interno1 {
+    width: 50%;
+    padding: 20px;
+}
+
+.interno1 p {
+    text-align: justify;
+}
+
+
+.interno1 h1 {
     padding-bottom: 10px;
 }
 
@@ -174,6 +223,24 @@ button:hover {
     width: auto;
     height: auto;
     align-self: center;
+}
+
+#button1 {
+    width: 277px;
+    height: 49px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #f4bc05;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+}
+
+#button1:hover {
+    background-color: white;
+    color: #f4bc05;
 }
 
 @media(max-width:1390px) {
@@ -228,12 +295,21 @@ button:hover {
     }
 
     #QuemSomos {
-        margin: 50p;
         width: 86vw;
         height: auto;
         background-color: white;
         border-radius: 20px;
         box-shadow: 0px 0px 20px 0px #00000078;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.3s ease;
+    }
+
+    #QuemSomos1 {
+        width: 86vw;
+        height: auto;
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
