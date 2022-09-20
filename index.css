@@ -201,6 +201,30 @@ button:hover {
     padding-bottom: 10px;
 }
 
+.interno2 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.interno2 p {
+    text-align: justify;
+    color: black;
+}
+
+
+.interno2 h1 {
+    padding-bottom: 10px;
+}
+
+.interno3 {
+    width: 25vw;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+
 #Lurys {
     width: 320px;
     object-fit: scale-down;
@@ -219,7 +243,7 @@ button:hover {
 }
 
 #divisao1 {
-    margin: 20px;
+    margin: 50px;
     width: auto;
     height: auto;
     align-self: center;
@@ -241,6 +265,94 @@ button:hover {
 #button1:hover {
     background-color: white;
     color: #f4bc05;
+}
+
+#Diferenciais {
+    width: 60vw;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+    align-self: center;
+    margin-top: 50px;
+    color: white;
+}
+
+#titulo {
+    align-self: center;
+}
+
+#Instalador {
+    width: 25vw;
+    height: 555.75px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#green {
+    position: absolute;
+    top: 777px;
+    z-index: -1;
+    width: 100vw;
+    height: 700px;
+    background-color: #0c2d2d;
+}
+
+#yellow {
+    position: absolute;
+    top: 1147px;
+    z-index: -1;
+    width: 100vw;
+    height: 400px;
+    background-color: #f4bc05;
+}
+
+#Diferenciais-box {
+    width: 50vw;
+    height: 555.75px;
+    background-color: white;
+    display: flex;
+    transition: 0.3s ease;
+    align-self: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+#interno2-boxes {
+    height: 468px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px #00000078;
+    display: flex;
+    transition: 0.3s ease;
+    align-self: center;
+}
+
+.boxes {
+    margin: 20px;
+    color: black;
+    height: 152px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px #00000078;
+    display: flex;
+}
+
+.boxes h1 {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.boxes img {
+    width: 46px;
+    object-fit: scale-down;
+    margin-left: 16px;
+}
+
+.boxes p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 12px;
 }
 
 @media(max-width:1390px) {
@@ -312,14 +424,55 @@ button:hover {
         background-color: white;
         display: flex;
         flex-direction: column;
-        align-items: center;
         transition: 0.3s ease;
+    }
+
+    #ul {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 260px;
+    }
+
+
+    #button1 {
+        margin-top: 50px;
     }
 
     #Lurys {
         width: 86vw;
         object-fit: scale-down;
         border-radius: 0px 0px 20px 20px;
+    }
+
+    #green {
+        top: 1692px;
+    }
+
+    #yellow {
+        top: 2388px;
+        height: 500px;
+    }
+
+    #Instalador {
+        width: 82vw;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    #Diferenciais-box {
+        flex-direction: column;
+        width: 82vw;
+        height: auto;
+    }
+
+    .boxes {
+        width: 70vw;
+        height: 32vh;
+    }
+
+    #imagem {
+        height: auto;
     }
 
 }
