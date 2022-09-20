@@ -423,8 +423,15 @@ button:hover {
         height: auto;
         background-color: white;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         transition: 0.3s ease;
+        justify-content: center;
+    }
+
+    .interno1 {
+        width: auto;
+        padding: 20px;
+        align-self: center;
     }
 
     #ul {
