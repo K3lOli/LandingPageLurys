@@ -418,6 +418,10 @@ button:hover {
         transition: 0.3s;
     }
 
+    .lista {
+        font-size: 4.5vw;
+    }
+
     #QuemSomos {
         width: 86vw;
         height: auto;
@@ -467,6 +471,7 @@ button:hover {
 
     #button1 {
         margin-top: 50px;
+        font-size: 5vw;
     }
 
     #Lurys {
