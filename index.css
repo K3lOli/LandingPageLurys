@@ -14,12 +14,12 @@ html {
 
 
 body {
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
 }
 
 header {
-    width: 100vw;
+    width: 99vw;
     height: 107vh;
     background-image: url(./images/Sobre\ Nós.png);
     background-size: cover;
@@ -34,6 +34,10 @@ header {
     color: white;
 }
 
+#lista li {
+    font-size: 2vw;
+}
+
 #LogoLurys {
     width: 200px;
     height: 80px;
@@ -41,7 +45,6 @@ header {
 }
 
 a {
-    font-size: 26px;
     color: white;
     text-decoration: none;
 }
@@ -53,14 +56,20 @@ a:hover {
 
 button {
     width: auto;
-    height: 49px;
+    height: auto;
     border-radius: 20px;
     padding: 10px;
     background-color: #f4bc05;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: bold;
+}
+
+#button:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #f4bc05;
 }
 
 button:hover {
@@ -69,7 +78,7 @@ button:hover {
 }
 
 .cabeçalho {
-    width: 100vw;
+    width: 99vw;
     height: 100px;
     flex-wrap: wrap;
     margin-top: 50px;
@@ -109,7 +118,7 @@ button:hover {
 }
 
 #container {
-    width: 100vw;
+    width: 99vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -120,7 +129,7 @@ button:hover {
 
 #QuemSomos {
     width: 60vw;
-    height: 320px;
+    height: 18vw;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 20px 0px #00000078;
@@ -159,6 +168,7 @@ button:hover {
     list-style-type: disc;
     margin: 0px 23px;
     text-align: justify;
+    font-size: 1vw;
 }
 
 /*.lista:before {
@@ -179,11 +189,13 @@ button:hover {
 }
 
 .interno p {
+    font-size: 1vw;
     text-align: justify;
 }
 
 
 .interno h1 {
+    font-size: 2vw;
     padding-bottom: 10px;
 }
 
@@ -218,7 +230,7 @@ button:hover {
 }
 
 .interno3 {
-    width: 25vw;
+    width: 33vw;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
@@ -226,7 +238,7 @@ button:hover {
 
 
 #Lurys {
-    width: 320px;
+    width: 30%;
     object-fit: scale-down;
     border-radius: 0px 20px 20px 0px;
 }
@@ -250,16 +262,17 @@ button:hover {
 }
 
 #button1 {
-    width: 277px;
-    height: 49px;
+    width: auto;
+    height: auto;
     border-radius: 20px;
     padding: 10px;
     background-color: #f4bc05;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: bold;
     align-self: center;
+    margin: 33px;
 }
 
 #button1:hover {
@@ -268,7 +281,7 @@ button:hover {
 }
 
 #Diferenciais {
-    width: 60vw;
+    width: 99vw;
     height: 272px;
     display: flex;
     flex-direction: column;
@@ -280,36 +293,35 @@ button:hover {
 
 #titulo {
     align-self: center;
+    margin-top: 50px;
 }
 
 #Instalador {
-    width: 25vw;
-    height: 555.75px;
+    width: 36vw;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
 }
 
 #green {
     position: absolute;
-    top: 777px;
     z-index: -1;
-    width: 100vw;
+    width: 99vw;
     height: 700px;
     background-color: #0c2d2d;
 }
 
 #yellow {
     position: absolute;
-    top: 1147px;
+
+    margin-top: 400px;
     z-index: -1;
-    width: 100vw;
+    width: 99vw;
     height: 400px;
     background-color: #f4bc05;
 }
 
 #Diferenciais-box {
-    width: 50vw;
-    height: 555.75px;
+    width: 70vw;
     background-color: white;
     display: flex;
     transition: 0.3s ease;
@@ -355,7 +367,7 @@ button:hover {
     font-size: 12px;
 }
 
-@media(max-width:1390px) {
+@media(max-width:1100px) {
     .cabeçalho {
         width: 100vw;
         height: 100vh;
@@ -428,6 +440,18 @@ button:hover {
         justify-content: center;
     }
 
+    .interno h1 {
+        font-size: 6vw;
+        width: auto;
+        align-self: center;
+    }
+
+    .interno p {
+        font-size: 4vw;
+        width: auto;
+        align-self: center;
+    }
+
     .interno1 {
         width: auto;
         padding: 20px;
@@ -452,11 +476,10 @@ button:hover {
     }
 
     #green {
-        top: 1692px;
+        top: 85%;
     }
 
     #yellow {
-        top: 2388px;
         height: 500px;
     }
 
@@ -479,7 +502,7 @@ button:hover {
     }
 
     #imagem {
-        height: auto;
+        height: 290px;
     }
 
 }
