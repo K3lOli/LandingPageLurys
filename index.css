@@ -32,6 +32,7 @@ header {
     display: flex;
     gap: 50px;
     color: white;
+    margin-top: 20px;
 }
 
 #lista li {
@@ -39,8 +40,7 @@ header {
 }
 
 #LogoLurys {
-    width: 200px;
-    height: 80px;
+    width: 12vw;
     object-fit: scale-down;
 }
 
@@ -81,7 +81,6 @@ button:hover {
     width: 99vw;
     height: 100px;
     flex-wrap: wrap;
-    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -107,14 +106,14 @@ button:hover {
     width: 28px;
     height: 3px;
     border-radius: 3px;
-    background: white;
+    background: #f4bc05;
     margin: 5px auto;
     transition: all 0.3s;
 }
 
 .menu .bar:nth-child(1),
 .menu .bar:nth-child(3) {
-    background: #0c2d2d;
+    background: white;
 }
 
 #container {
@@ -141,7 +140,6 @@ button:hover {
 
 #QuemSomos1 {
     width: 60vw;
-    height: 272px;
     background-color: white;
     display: flex;
     transition: 0.3s ease;
@@ -150,12 +148,13 @@ button:hover {
 }
 
 #bene-econo img {
-    width: 50px;
+    width: 3vw;
 }
 
 #bene-econo h1 {
     padding: 0;
     margin-left: 7px;
+    font-size: 1.5vw;
 
 }
 
@@ -230,10 +229,11 @@ button:hover {
 }
 
 .interno3 {
-    width: 33vw;
+    height: auto;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
+    padding: 0vw 2vw 2vw 2vw;
 }
 
 
@@ -250,12 +250,13 @@ button:hover {
 .divisao1 {
 
     width: 30vw;
-    height: 7px;
+    height: 0.3vw;
     background-color: #f4bc05;
+    margin: 2vw;
 }
 
 #divisao1 {
-    margin: 50px;
+    margin: 2vw;
     width: auto;
     height: auto;
     align-self: center;
@@ -272,7 +273,7 @@ button:hover {
     font-size: 1.5vw;
     font-weight: bold;
     align-self: center;
-    margin: 33px;
+    margin: 5vw;
 }
 
 #button1:hover {
@@ -282,7 +283,6 @@ button:hover {
 
 #Diferenciais {
     width: 99vw;
-    height: 272px;
     display: flex;
     flex-direction: column;
     transition: 0.3s ease;
@@ -294,6 +294,11 @@ button:hover {
 #titulo {
     align-self: center;
     margin-top: 50px;
+}
+
+#titulo h1 {
+    font-size: 2vw;
+    margin: 3vw;
 }
 
 #Instalador {
@@ -313,15 +318,16 @@ button:hover {
 #yellow {
     position: absolute;
 
-    margin-top: 400px;
+    margin-top: 18vw;
     z-index: -1;
     width: 99vw;
-    height: 400px;
+    height: 70vh;
     background-color: #f4bc05;
 }
 
 #Diferenciais-box {
     width: 70vw;
+    height: auto;
     background-color: white;
     display: flex;
     transition: 0.3s ease;
@@ -341,30 +347,155 @@ button:hover {
 }
 
 .boxes {
-    margin: 20px;
+    margin: 2vw 0vw 0vw 0vw;
     color: black;
-    height: 152px;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px #00000078;
+    box-shadow: 0px 0px 20px -10px #00000078;
     display: flex;
 }
 
 .boxes h1 {
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 1.1vw;
     margin-top: 10px;
 }
 
 .boxes img {
-    width: 46px;
+    width: 3vw;
     object-fit: scale-down;
     margin-left: 16px;
 }
 
 .boxes p {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 12px;
+    margin: 0px 1vw 1vw 1vw;
+    font-size: 0.8vw;
+}
+
+#ComoFunciona {
+    width: 50%;
+    align-items: center;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+#orçamento {
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    background: #f4bc05;
+}
+
+label {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#orçamento-box {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+#orçamento-box-geral {
+    margin-top: 4vw;
+    width: 70vw;
+}
+
+#orçamento-box-geral h1 {
+    font-size: 2vw;
+    color: white;
+    margin-bottom: 2vw;
+    text-decoration: underline 5px #0c2d2d;
+    text-underline-offset: 15px;
+}
+
+#orçamento-box-geral h2 {
+    font-size: 1.5vw;
+    color: white;
+    margin-bottom: 2vw;
+}
+
+#ComoFunciona h1 {
+    font-size: 1.5vw;
+}
+
+input {
+    border-radius: 4px;
+    margin: 0px 0px 1vw 0px;
+    height: 3vw;
+    border-style: solid;
+    border-width: 0.2vw;
+    border-color: white;
+    background: #f4bc05;
+    padding-left: 20px;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: white;
+    padding-left: 2px;
+}
+
+label button {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-left: 58%;
+    background: white;
+    color: #f4bc05;
+}
+
+#orçamento-box h1 {
+    text-decoration: none;
+}
+
+#redes-sociais {
+    width: 100%;
+    height: 20vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+#redes-sociais p {
+    align-self: center;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+#divisao2 {
+    width: 0.2vw;
+    margin: 0px 2vw 0px 2vw;
+    height: 3vw;
+    background: #f4bc05;
+    align-self: center;
+}
+
+#redes-sociais img {
+    width: 3vw;
+    margin: 1vw;
+    object-fit: scale-down;
+}
+
+#brilho-do-sol {
+    width: 25vw;
+    position: absolute;
+    filter: opacity(0.4) drop-shadow(0 0 0 yellow);
+    margin-left: -10vw;
+}
+
+#brilho-do-sol-2 {
+    width: 19vw;
+    position: absolute;
+    filter: opacity(0.4) drop-shadow(0 0 0 yellow);
+    /* left: 74vw; */
+    margin-top: 100vh;
+    margin-left: 78vw;
 }
 
 @media(max-width:1100px) {
@@ -378,8 +509,13 @@ button:hover {
         flex-wrap: wrap;
     }
 
+
+
     #LogoLurys {
+        margin-top: 4vw;
+        align-self: self-start;
         margin-left: 8vw;
+        width: 40vw;
     }
 
     #TextoInicial {
@@ -393,10 +529,47 @@ button:hover {
         color: #0c2d2d;
     }
 
+    #lista {
+        z-index: 1;
+        position: fixed;
+        text-align: center;
+        right: -100%;
+        top: 20vw;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: -10px;
+        transition: 0.3s;
+        background: white;
+        /* align-items: center; */
+        padding-top: 5vw;
+        padding-bottom: 10vw;
+        font-size: 0vw;
+    }
+
+    #lista.ativo {
+        right: 0;
+    }
+
     .menu {
         display: block;
         margin-right: 10vw;
         margin-top: 21px;
+    }
+
+    .menu.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background: white;
+    }
+
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background: white;
     }
 
     a {
@@ -405,21 +578,20 @@ button:hover {
         text-decoration: none;
     }
 
-    #lista {
-        position: fixed;
-        text-align: center;
-        right: -100%;
-        top: 70px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: -10px;
-        transition: 0.3s;
-    }
+
 
     .lista {
         font-size: 4.5vw;
+    }
+
+    #navigation {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 23vw;
+        z-index: 1;
+        background: #0c2d2d;
     }
 
     #QuemSomos {
@@ -444,6 +616,13 @@ button:hover {
         justify-content: center;
     }
 
+    .divisao1 {
+        width: 63vw;
+        height: 1.3vw;
+        background-color: #f4bc05;
+        margin: 2vw;
+    }
+
     .interno h1 {
         font-size: 6vw;
         width: auto;
@@ -458,13 +637,13 @@ button:hover {
 
     .interno1 {
         width: auto;
-        padding: 20px;
+        padding: 3vw;
         align-self: center;
     }
 
     #ul {
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 6vw;
+        margin-left: 4vw;
         width: 260px;
     }
 
@@ -481,11 +660,12 @@ button:hover {
     }
 
     #green {
-        top: 85%;
+        margin-top: 0%;
     }
 
     #yellow {
-        height: 500px;
+        height: 130vw;
+        margin-top: 59vh;
     }
 
     #Instalador {
@@ -502,12 +682,155 @@ button:hover {
     }
 
     .boxes {
-        width: 70vw;
-        height: 32vh;
+        width: 76vw;
+        height: auto;
+        padding: 2vw;
+    }
+
+    .boxes img {
+        display: none;
+    }
+
+    .boxes h1 {
+        margin-left: 3vw;
+        font-size: 4.8vw;
+        margin-top: 10px;
+    }
+
+    .boxes p {
+        margin: 0px 3vw 1vw 3vw;
+        font-size: 3.8vw;
+        font-weight: bold;
+    }
+
+    .interno3 {
+        height: auto;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        padding: 3vw 2vw 5vw 3vw;
     }
 
     #imagem {
         height: 290px;
     }
+
+    #bene-econo h1 {
+        font-size: 5.1vw;
+    }
+
+    #bene-econo img {
+        width: 11vw;
+    }
+
+    #titulo h1 {
+        font-size: 6vw;
+    }
+
+    #orçamento-box-geral {
+        margin-top: 16vw;
+        width: 82vw;
+    }
+
+    #orçamento-box-geral h1 {
+        font-size: 6vw;
+        color: white;
+        margin-bottom: 3vw;
+        text-decoration: underline 5px #0c2d2d;
+        text-underline-offset: 2vw;
+        text-decoration: none;
+    }
+
+    #orçamento-box-geral h2 {
+        font-size: 4.5vw;
+        color: white;
+        margin-bottom: 6vw;
+    }
+
+    #orçamento-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2vw;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    #ComoFunciona {
+        width: 100%;
+        align-items: center;
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: center; */
+        font-size: 4vw;
+        font-weight: bold;
+        margin-bottom: 5vw;
+    }
+
+    #ComoFunciona h1 {
+        font-size: 4.5vw;
+        text-decoration: none;
+    }
+
+    label {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        border-radius: 4px;
+        margin: 8px 0px 1vw 0px;
+        height: 13vw;
+        border-style: solid;
+        border-width: 0.2vw;
+        border-color: white;
+        background: #f4bc05;
+        padding-left: 20px;
+        font-size: 3.9vw;
+        font-weight: bold;
+    }
+
+    label button {
+        width: auto;
+        height: auto;
+        padding: 10px;
+        margin-top: 3vw;
+        margin-left: 34%;
+        background: white;
+        color: #f4bc05;
+    }
+
+    button {
+        width: auto;
+        height: auto;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: #f4bc05;
+        color: white;
+        border: none;
+        font-size: 4.5vw;
+        font-weight: bold;
+    }
+
+    #redes-sociais p {
+        font-size: 2.9vw;
+    }
+
+    #divisao2 {
+        width: 1.2vw;
+        height: 9vw;
+    }
+
+    #redes-sociais img {
+        width: 9vw;
+        margin: 2vw;
+    }
+
+    #brilho-do-sol,
+    #brilho-do-sol-2 {
+        display: none;
+    }
+
 
 }

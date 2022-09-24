@@ -6,25 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./index.css">
+
     <title>Lurys Energia</title>
 </head>
 
 <body>
     <header>
         <div class="cabeçalho">
-            <img id="LogoLurys" src="./images/LogoLurys.png" alt="">
+            <div id="navigation">
+                <img id="LogoLurys" src="./images/LogoLurys.png" alt="">
+                <div class="menu">
+                    <nav class="bar"></nav>
+                    <nav class="bar"></nav>
+                    <nav class="bar"></nav>
+                </div>
+            </div>
+
             <ul id="lista">
                 <li><a href="#QuemSomos">Quem somos nós?</a></li>
                 <li><a href="#Diferenciais">Diferenciais</a></li>
                 <li><a href="">Cases de Sucesso</a></li>
-                <li><button><a id="button">Peça seu orçamento</a></button></li>
+                <li><button><a id="button" href="#orçamento">Peça seu orçamento</a></button></li>
             </ul>
 
-            <div class="menu">
-                <nav class="bar"></nav>
-                <nav class="bar"></nav>
-                <nav class="bar"></nav>
-            </div>
+
         </div>
 
 
@@ -128,9 +133,51 @@
             </div>
             <div id="green"></div>
             <div id="yellow"></div>
+            <img id="brilho-do-sol" src="./images/brilho-do-sol.png" alt="">
+            <img id="brilho-do-sol-2" src="./images/brilho-do-sol.png" alt="">
+        </div>
+
+        <div id="orçamento">
+            <div id="orçamento-box-geral">
+                <h1>ORÇAMENTO</h1>
+                <h2>SOLICITE SEU ORÇAMENTO GRATUITAMENTE EM NOSSO SITE</h2>
+                <div id="orçamento-box">
+                    <div id="ComoFunciona">
+                        <h1>COMO FUNCIONA?</h1>
+                        <p>
+                            Precisamos do seu endereço completo e que nos envie uma conta de luz.
+                        </p>
+                        <br>
+                        <p>
+                            O endereço completo é importante para analisarmos o ambiente e quantidade de luz solar que
+                            sua
+                            residência ou empresa recebe. Sua conta de luz serve para fazer uma estimativa de gastos que
+                            você
+                            terá com energia da concessionária após a instalação do sistema fotovoltáico.
+                        </p>
+                    </div>
+                    <label>
+                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Telefone">
+                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="Endereço">
+
+                        <button>Anexar conta de luz</button>
+                    </label>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="redes-sociais">
+            <p>Entre em contato com a gente</p>
+            <div id="divisao2"></div>
+            <img src="./images/whatsapp.png" alt="">
+            <img src="./images/instagram.png" alt="">
         </div>
     </div>
-
+    <script src="./index.js"></script>
 
 
 </body>
