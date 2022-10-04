@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="./images/LogoSite.png" />
     <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./animated.css">
 
     <title>Lurys Energia</title>
 </head>
 
-<body>
+<body onload="init()">
     <header>
         <div class="cabeçalho">
             <div id="navigation">
-                <img id="LogoLurys" src="./images/LogoLurys.png" alt="">
+                <img id="LogoLurys" src="./images/LogoLurys.png" alt="" data-anime="left">
                 <div class="menu">
                     <nav class="bar"></nav>
                     <nav class="bar"></nav>
@@ -22,25 +24,26 @@
                 </div>
             </div>
 
-            <ul id="lista">
+            <ul id="lista" data-anime="right">
                 <li><a href="#QuemSomos">Quem somos nós?</a></li>
                 <li><a href="#Diferenciais">Diferenciais</a></li>
-                <li><a href="">Cases de Sucesso</a></li>
+                <!--<li><a href="">Cases de Sucesso</a></li>-->
                 <li><button><a id="button" href="#orçamento">Peça seu orçamento</a></button></li>
             </ul>
 
 
         </div>
 
+        <div id="TextoInicial" data-anime="left">
+            <p>Mais economia e conforto para sua casa e empresa</p>
+        </div>
 
     </header>
 
-    <div id="TextoInicial">
-        <p>Mais economia e conforto para sua casa e empresa</p>
-    </div>
+
 
     <div id="container">
-        <div id="QuemSomos">
+        <div id="QuemSomos" data-anime1="left">
             <div class="interno">
                 <h1>QUEM SOMOS NÓS?</h1>
                 <p>Somos uma empresa especializada em levar ao consumidor uma energia limpa, renovável e
@@ -59,7 +62,7 @@
         <div id="divisao1">
             <div class="divisao1"></div>
         </div>
-        <div id="QuemSomos1">
+        <div id="QuemSomos1" data-anime1="left">
             <div class="interno1">
                 <div id="bene-econo">
                     <img src="./images/pagamento-em-dinheiro.png" alt="">
@@ -89,7 +92,7 @@
 
 
         </div>
-        <button id="button1">Peça seu orçamento</button>
+        <button id="button1"><a href="#orçamento">Peça seu orçamento</a> </button>
 
 
 
@@ -98,7 +101,7 @@
                 <h1>DIFERENCIAIS</h1>
             </div>
             <div class="interno2">
-                <div id="Diferenciais-box">
+                <div id="Diferenciais-box" data-anime1="right">
                     <img id="Instalador" src="./images/Sobre Nós1.png" alt="">
                     <div class="interno3">
                         <div class="boxes">
@@ -156,14 +159,17 @@
                             terá com energia da concessionária após a instalação do sistema fotovoltáico.
                         </p>
                     </div>
-                    <label>
-                        <input type="text" placeholder="Nome">
-                        <input type="text" placeholder="Telefone">
-                        <input type="text" placeholder="E-mail">
-                        <input type="text" placeholder="Endereço">
+                    <form action="" data-anime1="left">
+                        <label>
+                            <input type="text" placeholder="Nome">
+                            <input type="text" placeholder="Telefone">
+                            <input type="text" placeholder="E-mail">
+                            <input type="text" placeholder="Endereço">
 
-                        <button>Anexar conta de luz</button>
-                    </label>
+                            <button>Anexar conta de luz</button>
+                        </label>
+                    </form>
+
                 </div>
             </div>
 
@@ -178,6 +184,7 @@
         </div>
     </div>
     <script src="./index.js"></script>
+    <script src="./animeted.js"></script>
 
 
 </body>

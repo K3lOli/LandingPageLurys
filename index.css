@@ -30,13 +30,14 @@ header {
 
 #lista {
     display: flex;
-    gap: 50px;
+    align-items: center;
+    gap: 2vw;
     color: white;
     margin-top: 20px;
 }
 
 #lista li {
-    font-size: 2vw;
+    font-size: 1.6vw;
 }
 
 #LogoLurys {
@@ -82,12 +83,13 @@ button:hover {
     height: 100px;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 2vw 2vw 0;
 }
 
 #TextoInicial {
-    margin-top: -68vh;
+    margin-top: -21vh;
     margin-left: 12vw;
     width: 36vw;
     display: block;
@@ -122,8 +124,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top: 100vh;
+    /* position: absolute;
+    top: 100vh; */
+    margin-top: -7vh;
 }
 
 #QuemSomos {
@@ -389,9 +392,12 @@ button:hover {
 }
 
 label {
-    width: 70%;
     display: flex;
     flex-direction: column;
+}
+
+form {
+    width: 70%;
 }
 
 #orçamento-box {
@@ -502,11 +508,11 @@ label button {
     .cabeçalho {
         width: 100vw;
         height: 100vh;
-        background-image: url(./images/Sobre\ Nós.png);
         background-size: cover;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin: 0;
     }
 
 
@@ -530,17 +536,17 @@ label button {
     }
 
     #lista {
-        z-index: 1;
+        z-index: 3;
         position: fixed;
         text-align: center;
         right: -100%;
         top: 20vw;
-        width: 100%;
+        width: 100vw;
         height: auto;
         display: flex;
         flex-direction: column;
         gap: -10px;
-        transition: 0.3s;
+        transition: right 0.3s;
         background: white;
         /* align-items: center; */
         padding-top: 5vw;
@@ -773,9 +779,12 @@ label button {
     }
 
     label {
-        width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    form {
+        width: 100%;
     }
 
     input {

@@ -1,0 +1,48 @@
+[data-anime],
+[data-anime1] {
+    opacity: 0;
+    transition: .9s;
+}
+
+[data-anime="left"],
+[data-anime1="left"] {
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime1="right"],
+[data-anime="right"] {
+    transform: translate3d(200px, 0, 0);
+}
+
+[data-anime].animate,
+[data-anime1="left"].animate,
+[data-anime1="right"].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+#TextoInicial.animate {
+    position: relative;
+    animation: osci 3s infinite alternate-reverse;
+}
+
+@keyframes osci {
+    from {
+        top: -2vw
+    }
+
+    to {
+        top: 2vw;
+    }
+}
+
+@media(max-width:1100px) {
+    [data-anime="right"] {
+        transform: none;
+    }
+
+    [data-anime1="right"] {
+        transform: translate3d(-100px, 0, 0);
+    }
+
+}
